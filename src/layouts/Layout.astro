@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navbar from "../sections/Navbar.astro";
+import Footer from "../sections/Footer.astro";
 ---
 
 <!doctype html>
@@ -11,7 +13,11 @@ import "../styles/global.css";
     <title>Luminari</title>
   </head>
   <body>
-    <slot />
+    <Navbar />
+    <main>
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
 
