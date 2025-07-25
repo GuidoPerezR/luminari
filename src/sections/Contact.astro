@@ -1,0 +1,112 @@
+---
+import ContactInfo from "../components/ContactInfo.astro";
+import Social from "../components/Social.astro";
+---
+
+<section>
+  <div>
+    <header>
+      <h2>Contacto y Redes Sociales</h2>
+    </header>
+    <p>Hola veni a seguirme pelotudo</p>
+    <div>
+      <div>
+        <header><h3>Envianos un mensaje</h3></header>
+        <form action="">
+          <div>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="subject">Asunto</label>
+            <input type="text" name="subject" id="subject" />
+          </div>
+          <div>
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </div>
+      <div>
+        <div>
+          <header>
+            <h3>Informacion de Contacto</h3>
+          </header>
+          <div>
+            <ContactInfo>
+              <img slot="icon" src="/" alt="" />
+              <span slot="title">Ubicacion</span>
+              <div slot="text">
+                <span>Calle del Arte 123</span>
+                <span>Centroo Historico</span>
+                <span>Ciudad de Mexico</span>
+              </div>
+            </ContactInfo>
+            <ContactInfo>
+              <img slot="icon" src="/" alt="" />
+              <span slot="title">Telefono</span>
+              <div slot="text">
+                <span>+52 1 55 1234 5678</span>
+              </div>
+            </ContactInfo>
+            <ContactInfo>
+              <img slot="icon" src="/" alt="" />
+              <span slot="title">Email</span>
+              <div slot="text">
+                <span>luminari@gmail.com</span>
+                <span>infoluminari@gmail.com</span>
+              </div>
+            </ContactInfo>
+          </div>
+        </div>
+        <div>
+          <header>
+            <h3>Siguenos en Redes Sociales</h3>
+          </header>
+          <div>
+            <Social>
+              <img slot="icon" src="/" alt="" />
+              <span slot="title">Facebook</span>
+              <span slot="text">@luminari</span>
+            </Social>
+            <Social>
+              <img slot="icon" src="/" alt="" />
+              <span slot="title">Facebook</span>
+              <span slot="text">@luminari</span>
+            </Social>
+            <Social>
+              <img slot="icon" src="/" alt="" />
+              <span slot="title">Facebook</span>
+              <span slot="text">@luminari</span>
+            </Social>
+            <Social>
+              <img slot="icon" src="/" alt="" />
+              <span slot="title">Facebook</span>
+              <span slot="text">@luminari</span>
+            </Social>
+          </div>
+        </div>
+        <div>
+          <header>
+            <h3>Horarios</h3>
+          </header>
+          <div>
+            <p>Lun - Vie:</p>
+            <p>10:00 - 19:00</p>
+          </div>
+          <div>
+            <p>Sabado:</p>
+            <p>10:00 - 15:00</p>
+          </div>
+          <div>
+            <p>Domingo:</p>
+            <p>Cerrado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

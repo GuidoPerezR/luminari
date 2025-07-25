@@ -1,0 +1,49 @@
+---
+import Event from "../components/Event.astro";
+---
+
+<section>
+  <header>
+    <h2>Exposicioones y Eventos</h2>
+  </header>
+  <p>Textoo aqui</p>
+  <div>
+    <Event>
+      <span slot="event_type">Exposicion</span>
+      <img slot="event_icon" src="/" alt="" />
+      <h3 slot="name">Exposicion de Arte</h3>
+      <p slot="description">Exposicion de Arte</p>
+      <p slot="date">15 de Marzo de 2025</p>
+      <p slot="time">10:00 - 12:00</p>
+      <p slot="location">Teatro Nahual</p>
+    </Event>
+    <Event>
+      <span slot="event_type">Exposicion</span>
+      <img slot="event_icon" src="/" alt="" />
+      <h3 slot="name">Exposicion de Arte</h3>
+      <p slot="description">Exposicion de Arte</p>
+      <p slot="date">15 de Marzo de 2025</p>
+      <p slot="time">10:00 - 12:00</p>
+      <p slot="location">Teatro Nahual</p>
+    </Event>
+    <Event>
+      <span slot="event_type">Exposicion</span>
+      <img slot="event_icon" src="/" alt="" />
+      <h3 slot="name">Exposicion de Arte</h3>
+      <p slot="description">Exposicion de Arte</p>
+      <p slot="date">15 de Marzo de 2025</p>
+      <p slot="time">10:00 - 12:00</p>
+      <p slot="location">Teatro Nahual</p>
+    </Event>
+  </div>
+  <div>
+    <header>
+      <p>No te pierdas Ningun Evento</p>
+    </header>
+    <p>Suscribete pinche perro</p>
+    <form action="">
+      <input type="email" name="email" id="email" />
+      <button type="submit">Suscribirme</button>
+    </form>
+  </div>
+</section>
