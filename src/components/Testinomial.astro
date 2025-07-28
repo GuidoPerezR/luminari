@@ -1,13 +1,22 @@
-<article>
+---
+const { description, initials, name, position } = Astro.props;
+---
+
+<article
+  class="grid grid-cols-1 gap-6 bg-tertiary outline-1 outline-white/20 rounded-xl p-10"
+>
   <header>
-    <slot name="image" />
+    <p class="text-yellow-300 text-2xl">★ ★ ★ ★ ★</p>
   </header>
-  <slot name="text" />
-  <div>
-    <a href=""><slot name="initials" /></a>
+  <p class="italic prose prose-invert">{description}</p>
+  <div class="flex items-center gap-4 pt-6 border-t-1 border-white/20">
+    <span
+      class="rounded-full bg-primary size-12 text-tertiary font-semibold text-lg flex justify-center items-center"
+      >{initials}</span
+    >
     <div>
-      <slot name="name" />
-      <slot name="position" />
+      <p class="font-bold text-lg">{name}</p>
+      <p class="text-white/80">{position}</p>
     </div>
   </div>
 </article>

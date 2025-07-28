@@ -2,46 +2,54 @@
 import Collection from "../components/Collection.astro";
 ---
 
-<section>
-  <div>
-    <header>
-      <h2>Colecciones Destacadas</h2>
-    </header>
-    <p>
-      Cada coleccion representa un viaje artistico unico, explorando diferentes
-      temaas y tecnicas que definen nuestro estilo distintivo
-    </p>
-    <div>
-      <Collection>
-        <img slot="image" src="/" alt="" />
-        <h3 slot="title">Luces de la ciudad</h3>
-        <p slot="description">Una serie que</p>
-        <p slot="paintings">5 obras</p>
-      </Collection>
-      <Collection>
-        <img slot="image" src="/" alt="" />
-        <h3 slot="title">Luces de la ciudad</h3>
-        <p slot="description">Una serie que</p>
-        <p slot="paintings">5 obras</p>
-      </Collection>
-      <Collection>
-        <img slot="image" src="/" alt="" />
-        <h3 slot="title">Luces de la ciudad</h3>
-        <p slot="description">Una serie que</p>
-        <p slot="paintings">5 obras</p>
-      </Collection>
-      <Collection>
-        <img slot="image" src="/" alt="" />
-        <h3 slot="title">Luces de la ciudad</h3>
-        <p slot="description">Una serie que</p>
-        <p slot="paintings">5 obras</p>
-      </Collection>
-      <Collection>
-        <img slot="image" src="/" alt="" />
-        <h3 slot="title">Luces de la ciudad</h3>
-        <p slot="description">Una serie que</p>
-        <p slot="paintings">5 obras</p>
-      </Collection>
-    </div>
+<section
+  class="flex flex-col justify-center items-center gap-6 min-h-dvh w-full px-6 py-24 bg-tertiary"
+>
+  <header>
+    <h2 class="text-4xl font-bold text-center">
+      Colecciones <span class="text-primary">Destacadas</span>
+    </h2>
+  </header>
+  <p class="prose text-white text-xl text-center text-balance">
+    Cada coleccion representa un viaje artistico unico, explorando diferentes
+    temaas y tecnicas que definen nuestro estilo distintivo
+  </p>
+  <div class="flex flex-col gap-6">
+    <Collection
+      image="galery-img1"
+      title="Luces de la ciudad"
+      description="Una serie que captura la esencia nocturna de la urbe"
+      paintings="5 obras"
+    />
+    <Collection
+      image="galery-img2"
+      title="Luces de la ciudad"
+      description="Una serie que captura la esencia nocturna de la urbe"
+      paintings="5 obras"
+    />
+    <Collection
+      image="galery-img3"
+      title="Luces de la ciudad"
+      description="Una serie que captura la esencia nocturna de la urbe"
+      paintings="5 obras"
+    />
+    <Collection
+      image="galery-img4"
+      title="Luces de la ciudad"
+      description="Una serie que captura la esencia nocturna de la urbe"
+      paintings="5 obras"
+    />
+    <Collection
+      image="galery-img5"
+      title="Luces de la ciudad"
+      description="Una serie que captura la esencia nocturna de la urbe"
+      paintings="5 obras"
+    />
+    <Collection
+      image="galery-img6"
+      title="Luces de la ciudad"
+      description="Una serie que captura la esencia nocturna de la urbe"
+      paintings="5 obras"
+    />
   </div>
 </section>

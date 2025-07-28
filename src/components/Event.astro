@@ -1,27 +1,57 @@
-<article>
-  <div>
-    <header>
-      <span>Proximamente</span>
-      <span><slot name="event_type" /></span>
+---
+const { event_type, event_icon, name, description, date, time, location } =
+  Astro.props;
+---
+
+<article class="flex flex-col bg-secondary rounded-xl px-10 py-12 gap-6">
+  <div class="flex flex-col gap-6">
+    <header class="flex gap-4">
+      <span
+        class="bg-primary text-tertiary font-semibold
+      py-1 px-4 rounded-2xl text-sm"
+        >Proximamente</span
+      >
+      <span
+        class="bg-tertiary text-primary font-semibold
+      py-1 px-4 rounded-2xl text-sm"
+        >{event_type}</span
+      >
     </header>
-    <div>
-      <slot name="event_icon" />
-    </div>
-    <div>
-      <h3><slot name="name" /></h3>
-      <p><slot name="description" /></p>
+    <div class="flex gap-4">
+      <div class="text-white">
+        <svg class="size-12">
+          <use xlink:href={`./assets/sprite.svg#${event_icon}`}></use>
+        </svg>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h3 class="text-3xl font-bold text-balance">{name}</h3>
+        <p class="prose prose-invert">{description}</p>
+      </div>
     </div>
   </div>
-  <div>
-    <p>
-      <span>icon</span><slot name="date" />
+  <div class="pt-6 flex flex-col gap-6">
+    <p class="flex gap-4 items-center font-bold text-lg">
+      <svg class="size-8 text-primary">
+        <use xlink:href={`./assets/sprite.svg#calendar-icon`}></use>
+      </svg>
+      {date}
     </p>
-    <p>
-      <span>icon</span><slot name="time" />
+    <p class="flex gap-4 items-center text-lg">
+      <svg class="size-8 text-primary">
+        <use xlink:href={`./assets/sprite.svg#clock-icon`}></use>
+      </svg>
+      {time}
     </p>
-    <p>
-      <span>icon</span><slot name="location" />
+    <p class="flex gap-4 items-center text-lg">
+      <svg class="size-8 text-primary">
+        <use xlink:href={`./assets/sprite.svg#location-icon`}></use>
+      </svg>
+      {location}
     </p>
-    <a href="/">Reservar Plaza</a>
+    <a
+      href="/"
+      class="w-full p-3 rounded-xl bg-primary flex items-center justify-center text-tertiary font-semibold"
+      >Reservar Plaza</a
+    >
   </div>
 </article>

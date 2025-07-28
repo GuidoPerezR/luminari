@@ -1,13 +1,21 @@
-<article>
+---
+const { image, title, description, paintings } = Astro.props;
+---
+
+<article class="flex flex-col bg-secondary rounded-xl overflow-hidden">
   <div>
-    <slot name="image" />
+    <img src=`./assets/${image}.webp` alt={title} class="" />
   </div>
-  <div>
-    <slot name="title" />
-    <slot name="description" />
-    <slot name="paintings" />
+  <div class="p-8 py-10 flex flex-col gap-6">
+    <h3 class="text-3xl font-bold">{title}</h3>
+    <p class="prose prose-invert">{description}</p>
+    <p class="prose-invert prose">🖼️ {paintings}</p>
     <footer>
-      <a href="">Ver coleccion</a>
+      <a
+        href=""
+        class="bg-primary p-4 w-full flex justify-center items-center text-black font-semibold rounded-xl"
+        >Ver Colección</a
+      >
     </footer>
   </div>
 </article>

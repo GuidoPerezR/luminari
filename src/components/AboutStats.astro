@@ -1,5 +1,11 @@
-<div>
-  <slot name="icon" />
-  <slot name="number" />
-  <slot name="text" />
+---
+const { icon, number, text } = Astro.props;
+---
+
+<div class="flex flex-col gap-2 items-center">
+  <svg class="size-10 text-primary mb-2">
+    <use xlink:href={`./assets/sprite.svg#${icon}`}></use>
+  </svg>
+  <span class="text-4xl font-bold">{number}</span>
+  <span>{text}</span>
 </div>

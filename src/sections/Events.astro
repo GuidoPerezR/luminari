@@ -2,39 +2,46 @@
 import Event from "../components/Event.astro";
 ---
 
-<section>
+<section
+  class="flex flex-col w-full justify-center items-center px-6 py-24 gap-6 bg-tertiary min-h-dvh"
+>
   <header>
-    <h2>Exposicioones y Eventos</h2>
+    <h2 class="text-4xl font-bold text-center">
+      Exposiciones y <span class="text-primary">Eventos</span>
+    </h2>
   </header>
-  <p>Textoo aqui</p>
-  <div>
-    <Event>
-      <span slot="event_type">Exposicion</span>
-      <img slot="event_icon" src="/" alt="" />
-      <h3 slot="name">Exposicion de Arte</h3>
-      <p slot="description">Exposicion de Arte</p>
-      <p slot="date">15 de Marzo de 2025</p>
-      <p slot="time">10:00 - 12:00</p>
-      <p slot="location">Teatro Nahual</p>
-    </Event>
-    <Event>
-      <span slot="event_type">Exposicion</span>
-      <img slot="event_icon" src="/" alt="" />
-      <h3 slot="name">Exposicion de Arte</h3>
-      <p slot="description">Exposicion de Arte</p>
-      <p slot="date">15 de Marzo de 2025</p>
-      <p slot="time">10:00 - 12:00</p>
-      <p slot="location">Teatro Nahual</p>
-    </Event>
-    <Event>
-      <span slot="event_type">Exposicion</span>
-      <img slot="event_icon" src="/" alt="" />
-      <h3 slot="name">Exposicion de Arte</h3>
-      <p slot="description">Exposicion de Arte</p>
-      <p slot="date">15 de Marzo de 2025</p>
-      <p slot="time">10:00 - 12:00</p>
-      <p slot="location">Teatro Nahual</p>
-    </Event>
+  <p class="prose text-white text-xl text-center text-balance">
+    Sumérgete en el mundo del arte a través de nuestras exposiciones especiales,
+    talleres educativos y charlas con artistas reconocidos
+  </p>
+  <div class="flex flex-col gap-6 w-full pt-6">
+    <Event
+      event_type="Exposicion"
+      event_icon="shadow-icon"
+      name="Exposicion: Luces y Sombras"
+      description="Una muestra exclusiva de nuestra nueva colección que explora los contrastes dramáticos en la fotografía contemporánea."
+      date="15 de Marzo de 2025"
+      time="10:00 - 12:00"
+      location="Teatro Nahual"
+    />
+    <Event
+      event_type="Taller"
+      event_icon="image-icon"
+      name="Taller: Técnicas de Composición"
+      description="Aprende los secretos de la composición fotográfica de la mano de nuestros artistas expertos."
+      date="22 de Marzo, 2024"
+      time="16:00 - 18:00"
+      location="Estudio Creativo"
+    />
+    <Event
+      event_type="Charla"
+      event_icon="message-icon"
+      name="Charla: El Futuro del Arte Visual"
+      description="Una conversación íntima sobre las tendencias emergentes en el arte visual y la fotografía digital."
+      date="5 de Abril, 2024"
+      time="19:00 - 20:30"
+      location="Auditorio"
+    />
   </div>
   <div>
     <header>
