@@ -43,14 +43,29 @@ import Event from "../components/Event.astro";
       location="Auditorio"
     />
   </div>
-  <div>
+  <div
+    class="mt-10 p-8 bg-gradient-to-br from-yellow-500 to-yellow-200 w-full rounded-xl text-tertiary flex flex-col gap-8"
+  >
     <header>
-      <p>No te pierdas Ningun Evento</p>
+      <p class="text-2xl font-bold text-center">No te pierdas Ningun Evento</p>
     </header>
-    <p>Suscribete pinche perro</p>
-    <form action="">
-      <input type="email" name="email" id="email" />
-      <button type="submit">Suscribirme</button>
+    <p class="text-center text-balance text-lg">
+      Suscribete a nuestroo boletin para recibir informacioon soobre proximas
+      exposicioones, talleres, y eventos exclusivos
+    </p>
+    <form action="" class="flex flex-col gap-6">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="p-4 bg-tertiary/30 outline-1 outline-gray-700/80 rounded-xl text-lg"
+        placeholder="Tu correo electronico"
+      />
+      <button
+        type="submit"
+        class="py-3 bg-secondary rounded-xl w-full text-primary font-semibold text-lg"
+        >Suscribirme</button
+      >
     </form>
   </div>
 </section>

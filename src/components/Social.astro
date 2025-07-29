@@ -1,11 +1,17 @@
-<article>
-  <a href="">
+---
+const { icon, title, text } = Astro.props;
+---
+
+<article class="bg-tertiary p-6 rounded-xl outline-1 outline-white/20">
+  <a href="" class="flex gap-4 items-center">
     <div>
-      <slot name="icon" />
+      <svg class="size-8">
+        <use xlink:href={`./assets/sprite.svg#${icon}`}></use>
+      </svg>
     </div>
     <div>
-      <slot name="title" />
-      <slot name="text" />
+      <p class="font-bold text-lg">{title}</p>
+      <p>{text}</p>
     </div>
   </a>
 </article>
