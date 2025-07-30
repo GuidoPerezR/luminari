@@ -6,3 +6,34 @@
   --color-secondary: #1f1f1f;
   --color-tertiary: #2a2a2a;
 }
+
+/* Transicion Sweep to Top */
+.hvr-sweep-to-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #303030;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.hvr-sweep-to-top:hover::before {
+  transform: scaleY(1);
+}
+
+/* Transicion Sweep to Bottom */
+.hvr-sweep-to-bottom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #ffcb31;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
+}
+.hvr-sweep-to-bottom:hover::before {
+  transform: scaleY(1);
+}
