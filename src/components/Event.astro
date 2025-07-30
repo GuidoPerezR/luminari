@@ -1,4 +1,6 @@
 ---
+import Button from "./Button.astro";
+
 const { event_type, event_icon, name, description, date, time, location } =
   Astro.props;
 ---
@@ -48,10 +50,6 @@ const { event_type, event_icon, name, description, date, time, location } =
       </svg>
       {location}
     </p>
-    <a
-      href="/"
-      class="w-full p-3 rounded-xl bg-primary flex items-center justify-center text-tertiary font-semibold"
-      >Reservar Lugar</a
-    >
+    <Button href="/" size="lg">Reservar Lugar</Button>
   </div>
 </article>

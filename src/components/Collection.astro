@@ -1,4 +1,6 @@
 ---
+import Button from "./Button.astro";
+
 const { image, title, description, paintings } = Astro.props;
 ---
 
@@ -11,11 +13,7 @@ const { image, title, description, paintings } = Astro.props;
     <p class="prose prose-invert">{description}</p>
     <p class="prose-invert prose">🖼️ {paintings}</p>
     <footer>
-      <a
-        href=""
-        class="bg-primary p-4 w-full flex justify-center items-center text-black font-semibold rounded-xl"
-        >Ver Colección</a
-      >
+      <Button href="/" size="md">Ver Colección</Button>
     </footer>
   </div>
 </article>

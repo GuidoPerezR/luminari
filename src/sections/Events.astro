@@ -4,6 +4,7 @@ import Event from "../components/Event.astro";
 
 <section
   class="flex flex-col w-full justify-center items-center px-6 py-24 gap-6 bg-tertiary min-h-dvh"
+  id="events"
 >
   <header>
     <h2 class="text-4xl font-bold text-center">
@@ -63,7 +64,7 @@ import Event from "../components/Event.astro";
       />
       <button
         type="submit"
-        class="py-3 bg-secondary rounded-xl w-full text-primary font-semibold text-lg"
+        class="relative inline-block py-2.5 bg-secondary rounded-xl w-full text-center font-semibold text-lg text-primary overflow-hidden z-10 transition-colors duration-300 hvr-sweep-to-top cursor-pointer"
         >Suscribirme</button
       >
     </form>

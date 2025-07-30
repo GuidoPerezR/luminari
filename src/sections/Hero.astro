@@ -1,3 +1,7 @@
+---
+import Button from "../components/Button.astro";
+---
+
 <section
   class="min-h-dvh w-full max-w-4xl
  p-6 flex gap-8 flex-col justify-center items-center bg-[url('./assets/mobile-bg.webp')] bg-cover"
@@ -17,17 +21,11 @@
     creatividad y la expresión artística
   </p>
   <footer class="flex flex-col gap-4 w-full">
+    <Button href="#gallery" size="lg">Explorar Galería</Button>
     <a
-      href="/"
-      class="py-2.5 bg-primary rounded-xl w-full text-black text-center font-semibold text-lg shadow-glow"
+      href="#about-us"
+      class="relative inline-block py-2.5 bg-secondary rounded-xl w-full text-center font-semibold text-lg text-primary overflow-hidden z-10 transition-colors duration-300 hvr-sweep-to-top"
+      >Sobre Nosotros</a
     >
-      Explorar Galería
-    </a>
-    <a
-      href="/"
-      class="py-2.5 bg-secondary rounded-xl w-full text-center font-semibold text-lg shadow-glow text-primary outline-primary outline-1"
-    >
-      Sobre Nosotros
-    </a>
   </footer>
 </section>
