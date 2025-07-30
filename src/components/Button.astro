@@ -1,0 +1,17 @@
+---
+const { href, size } = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    "relative inline-block bg-primary rounded-xl w-full text-tertiary text-center font-semibold overflow-hidden z-10 transition-colors duration-300 hvr-sweep-to-bottom",
+    ,
+    {
+      "text-md py-4": size === "md",
+      "text-lg py-2.5": size === "lg",
+    },
+  ]}
+>
+  <slot />
+</a>
