@@ -4,14 +4,22 @@ import Button from "./Button.astro";
 const { image, title, description, paintings } = Astro.props;
 ---
 
-<article class="flex flex-col bg-secondary rounded-xl overflow-hidden">
-  <div>
-    <img src=`./assets/${image}.webp` alt={title} class="" />
+<article
+  class="flex flex-col bg-secondary rounded-xl overflow-hidden w-full lg:flex-row"
+>
+  <div class="w-full h-72 lg:h-96 lg:flex-1/2">
+    <img
+      src=`./assets/${image}.webp`
+      alt={title}
+      class="w-full h-full object-cover"
+    />
   </div>
-  <div class="p-8 py-10 flex flex-col gap-6">
+  <div
+    class="p-8 py-10 flex flex-col gap-6 lg:flex-1/2 justify-between lg:p-12"
+  >
     <h3 class="text-3xl font-bold">{title}</h3>
-    <p class="prose prose-invert">{description}</p>
-    <p class="prose-invert prose">🖼️ {paintings}</p>
+    <p class="prose prose-invert md:text-lg">{description}</p>
+    <p class="prose-invert prose md:text-lg">🖼️ {paintings}</p>
     <footer>
       <Button href="/" size="md">Ver Colección</Button>
     </footer>

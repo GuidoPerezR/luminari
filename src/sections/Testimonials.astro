@@ -2,36 +2,38 @@
 import Testimonial from "../components/Testimonial.astro";
 ---
 
-<section
-  class="flex flex-col w-full justify-center items-center px-6 py-24 gap-6"
->
-  <header>
-    <h2 class="text-4xl font-bold text-center text-balance">
-      Lo que dicen <span class="text-primary">Nuestros Visitantes</span>
-    </h2>
-  </header>
-  <p class="prose text-white text-xl text-center text-balance">
-    La opinión de críticos, coleccionistas y amantes del arte que han
-    experimentado nuestra galería
-  </p>
-  <div class="flex flex-col gap-6 pt-6 w-full">
-    <Testimonial
-      description='"Una experiencia visual extraordinaria. Cada obra cuenta una historia única que trasciende lo meramente estético para tocar el alma del espectador."'
-      initials="GP"
-      name="Guido Pérez"
-      position="Desarrollador"
-    />
-    <Testimonial
-      description='"La técnica y la sensibilidad artística se combinan de manera magistral. Sin duda, una de las galerías más impresionantes que he visitado."'
-      initials="KT"
-      name="Karla Tovar"
-      position="Crítica de Arte"
-    />
-    <Testimonial
-      description='"El trabajo presentado aquí redefine los límites entre la fotografía y el arte contemporáneo. Absolutamente cautivador y provocativo."'
-      initials="JJ"
-      name="Jonathan Jotore"
-      position="Coleccionista"
-    />
+<section class=" w-full flex justify-center items-center px-6 py-24">
+  <div class="flex flex-col gap-8 max-w-6xl justify-center items-center">
+    <header>
+      <h2 class="text-4xl font-bold text-center text-balance md:text-5xl">
+        Lo que dicen <span class="text-primary">Nuestros Visitantes</span>
+      </h2>
+    </header>
+    <p class="prose text-white text-xl text-center">
+      La opinión de críticos, coleccionistas y amantes del arte que han
+      experimentado nuestra galería
+    </p>
+    <div
+      class="grid grid-cols-1 gap-10 pt-8 w-full md:grid-cols-2 lg:grid-cols-3"
+    >
+      <Testimonial
+        description='"Una experiencia visual extraordinaria. Cada obra cuenta una historia única que trasciende lo meramente estético para tocar el alma del espectador."'
+        initials="GP"
+        name="Guido Pérez"
+        position="Desarrollador"
+      />
+      <Testimonial
+        description='"La técnica y la sensibilidad artística se combinan de manera magistral. Sin duda, una de las galerías más impresionantes que he visitado."'
+        initials="KT"
+        name="Karla Tovar"
+        position="Crítica de Arte"
+      />
+      <Testimonial
+        description='"El trabajo presentado aquí redefine los límites entre la fotografía y el arte contemporáneo. Absolutamente cautivador y provocativo."'
+        initials="JJ"
+        name="Jonathan Jotore"
+        position="Coleccionista"
+      />
+    </div>
   </div>
 </section>

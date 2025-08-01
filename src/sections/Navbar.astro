@@ -1,25 +1,26 @@
 ---
-
+import NavItem from "../components/NavItem.astro";
 ---
 
-<nav class="fixed top-0 w-dvw flex justify-between p-6 items-center">
-  <a href="/" class="flex gap-2 items-center">
+<nav
+  class="fixed top-0 w-full flex justify-between p-6 items-center z-20 lg:px-12"
+>
+  <a href="#" class="flex gap-2 items-center">
     <svg class="size-8 text-primary">
       <use xlink:href="/assets/sprite.svg#logo-icon"></use>
     </svg>
     <span class="font-bold text-xl">Luminari</span>
   </a>
-  <div class="flex items-center">
+  <div class="flex items-center md:hidden">
     <svg class="size-8 cursor-pointer">
       <use xlink:href="/assets/sprite.svg#burger-icon"></use>
     </svg>
   </div>
-  <!-- <ul>
-    <li>Inicio</li>
-    <li>Sobre Nosotros</li>
-    <li>Galeria</li>
-    <li>Colecciones</li>
-    <li>Exposiciones</li>
-    <li>Contacto</li>
-  </ul> -->
+  <ul class="hidden gap-8 font-medium md:flex md:items-center">
+    <NavItem href="#about-us"> Sobre Nosotros </NavItem>
+    <NavItem href="#gallery"> Galeria </NavItem>
+    <NavItem href="#collections"> Colecciones </NavItem>
+    <NavItem href="#events"> Exposiciones </NavItem>
+    <NavItem href="#contact"> Contacto </NavItem>
+  </ul>
 </nav>

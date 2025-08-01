@@ -3,41 +3,45 @@ import AboutStats from "../components/AboutStats.astro";
 ---
 
 <section
-  class="min-h-dvh w-full flex flex-col px-6 py-24 gap-12 justify-center items-center bg-tertiary"
+  class="min-h-dvh w-full flex px-6 py-16 justify-center items-center bg-tertiary"
   id="about-us"
 >
-  <section class="flex flex-col gap-10">
-    <div class="flex flex-col gap-6">
-      <header>
-        <h2 class="text-4xl font-bold">
-          Sobre <span class="text-primary">Luminari</span>
-        </h2>
-      </header>
-      <p class="prose prose-invert text-white text-lg text-balance">
-        Luminari nace de la pasión por capturar momentos únicos y transformarlos
-        en arte visual. Cada fotografía cuenta una historia, cada composición
-        despierta emociones y cada exposición es un viaje hacia lo
-        extraordinario.
-      </p>
-      <p class="prose prose-invert text-white text-lg text-balance">
-        Con más de una década de experiencia, hemos desarrollado un estilo único
-        que combina técnica clásica con visión contemporánea, creando obras que
-        trascienden el tiempo y conectan con el alma del espectador.
-      </p>
+  <div class="max-w-6xl gap-10 flex flex-col">
+    <section class="flex flex-col gap-10 lg:flex-row lg:items-center">
+      <div class="flex flex-col gap-6">
+        <header>
+          <h2 class="text-4xl font-bold md:text-5xl">
+            Sobre <span class="text-primary">Luminari</span>
+          </h2>
+        </header>
+        <p class="prose prose-invert text-white text-lg text-balance">
+          Luminari nace de la pasión por capturar momentos únicos y
+          transformarlos en arte visual. Cada fotografía cuenta una historia,
+          cada composición despierta emociones y cada exposición es un viaje
+          hacia lo extraordinario.
+        </p>
+        <p class="prose prose-invert text-white text-lg text-balance">
+          Con más de una década de experiencia, hemos desarrollado un estilo
+          único que combina técnica clásica con visión contemporánea, creando
+          obras que trascienden el tiempo y conectan con el alma del espectador.
+        </p>
+      </div>
+      <div class="max-w-xl">
+        <img
+          src="./assets/about-us-img.webp"
+          alt="Imagen de una mujer en un museo observando un cuadro sobre flores"
+          class="rounded-xl aspect-square object-cover object-left"
+        />
+      </div>
+    </section>
+    <div class="border-b-1 border-white/20 my-6"></div>
+    <div
+      class="grid grid-cols-2 justify-between w-full gap-y-10 md:grid-cols-4"
+    >
+      <AboutStats icon="eye-icon" number="50K+" text="Visualizaciones" />
+      <AboutStats icon="heart-icon" number="5K+" text="Obras Favoritas" />
+      <AboutStats icon="followers-icon" number="2K+" text="Seguidores" />
+      <AboutStats icon="award-icon" number="25+" text="Premios" />
     </div>
-    <div>
-      <img
-        src="./assets/about-us-img.webp"
-        alt="Imagen de una mujer en un museo observando un cuadro sobre flores"
-        class="rounded-xl aspect-square object-cover object-left"
-      />
-    </div>
-    <div class="border-b-1 border-gray-700 my-6"></div>
-  </section>
-  <div class="grid grid-cols-2 justify-between w-full gap-y-10">
-    <AboutStats icon="eye-icon" number="50K+" text="Visualizaciones" />
-    <AboutStats icon="heart-icon" number="5K+" text="Obras Favoritas" />
-    <AboutStats icon="followers-icon" number="2K+" text="Seguidores" />
-    <AboutStats icon="award-icon" number="25+" text="Premios" />
   </div>
 </section>

@@ -3,54 +3,56 @@ import Collection from "../components/Collection.astro";
 ---
 
 <section
-  class="flex flex-col justify-center items-center gap-6 min-h-dvh w-full px-6 py-24 bg-tertiary"
+  class="flex justify-center items-center min-h-dvh w-full px-6 py-24 bg-tertiary"
   id="collections"
 >
-  <header>
-    <h2 class="text-4xl font-bold text-center">
-      Colecciones <span class="text-primary">Destacadas</span>
-    </h2>
-  </header>
-  <p class="prose text-white text-xl text-center text-balance">
-    Cada colección representa un viaje artístico único, explorando diferentes
-    temas y técnicas que definen nuestro estilo distintivo
-  </p>
-  <div class="flex flex-col gap-6 mt-12">
-    <Collection
-      image="gallery-img1"
-      title="Ecos de Luz"
-      description="Una serie de piezas que exploran la relación entre la iluminación natural y la emoción humana. Cada obra captura un instante donde la luz transforma lo cotidiano en poesía visual."
-      paintings="15 obras"
-    />
-    <Collection
-      image="gallery-img2"
-      title="Naturaleza Abierta"
-      description="Una inmersión en los paisajes, lo orgánico y lo salvaje. Colores vibrantes, texturas que respiran y formas que nos conectan con lo esencial."
-      paintings="10 obras"
-    />
-    <Collection
-      image="gallery-img3"
-      title="Rostros del Alma"
-      description="Retratos que miran más allá del cuerpo. Cada pieza nos invita a descubrir las historias invisibles que viven detrás de cada mirada, cada gesto, cada trazo."
-      paintings="8 obras"
-    />
-    <Collection
-      image="gallery-img4"
-      title="Fragmentos del Tiempo"
-      description="Arte inspirado en la memoria, los sueños y las cicatrices del tiempo. Una colección que une pasado y presente en composiciones etéreas y profundamente humanas."
-      paintings="12 obras"
-    />
-    <Collection
-      image="gallery-img5"
-      title="Luces de la ciudad"
-      description="Una serie que captura la esencia nocturna de la urbe"
-      paintings="10 obras"
-    />
-    <Collection
-      image="gallery-img6"
-      title="Caos y Calma"
-      description="Contrastes en su máxima expresión: lo abstracto y lo sereno, el ruido visual y la pausa. Una experiencia sensorial que estimula y relaja al mismo tiempo."
-      paintings="7 obras"
-    />
+  <div class="flex flex-col justify-center items-center gap-8 max-w-6xl">
+    <header>
+      <h2 class="text-4xl font-bold text-center md:text-5xl">
+        Colecciones <span class="text-primary">Destacadas</span>
+      </h2>
+    </header>
+    <p class="prose text-white text-xl text-center">
+      Cada colección representa un viaje artístico único, explorando diferentes
+      temas y técnicas que definen nuestro estilo distintivo
+    </p>
+    <div class="flex flex-col gap-10 mt-12">
+      <Collection
+        image="gallery-img1"
+        title="Ecos de Luz"
+        description="Una serie de piezas que exploran la relación entre la iluminación natural y la emoción humana. Cada obra captura un instante donde la luz transforma lo cotidiano en poesía visual."
+        paintings="15 obras"
+      />
+      <Collection
+        image="gallery-img2"
+        title="Naturaleza Abierta"
+        description="Una inmersión en los paisajes, lo orgánico y lo salvaje. Colores vibrantes, texturas que respiran y formas que nos conectan con lo esencial."
+        paintings="10 obras"
+      />
+      <Collection
+        image="gallery-img3"
+        title="Rostros del Alma"
+        description="Retratos que miran más allá del cuerpo. Cada pieza nos invita a descubrir las historias invisibles que viven detrás de cada mirada, cada gesto, cada trazo."
+        paintings="8 obras"
+      />
+      <Collection
+        image="gallery-img4"
+        title="Fragmentos del Tiempo"
+        description="Arte inspirado en la memoria, los sueños y las cicatrices del tiempo. Una colección que une pasado y presente en composiciones etéreas y profundamente humanas."
+        paintings="12 obras"
+      />
+      <Collection
+        image="gallery-img5"
+        title="Luces de la ciudad"
+        description="Una serie que captura la esencia nocturna de la urbe"
+        paintings="10 obras"
+      />
+      <Collection
+        image="gallery-img6"
+        title="Caos y Calma"
+        description="Contrastes en su máxima expresión: lo abstracto y lo sereno, el ruido visual y la pausa. Una experiencia sensorial que estimula y relaja al mismo tiempo."
+        paintings="7 obras"
+      />
+    </div>
   </div>
 </section>

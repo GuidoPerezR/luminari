@@ -1,99 +1,116 @@
-<footer class="bg-secondary p-6">
-  <div class="flex flex-col gap-10 pb-12 border-b-1 border-white/20">
-    <div class="flex flex-col gap-8">
-      <div class="flex gap-2 items-center">
-        <svg class="size-8 text-primary">
-          <use xlink:href="/assets/sprite.svg#logo-icon"></use>
-        </svg>
-        <span class="font-bold text-2xl">Luminari</span>
+<footer class="bg-secondary px-6 pt-24 pb-6 flex justify-center">
+  <div class="w-full max-w-7xl flex flex-col gap-10">
+    <div
+      class="flex flex-col gap-10 pb-12 border-b-1 border-white/20 lg:flex-row"
+    >
+      <div class="flex flex-col gap-6 flex-1">
+        <div class="flex gap-2 items-center">
+          <svg class="size-8 text-primary">
+            <use xlink:href="/assets/sprite.svg#logo-icon"></use>
+          </svg>
+          <span class="font-bold text-2xl">Luminari</span>
+        </div>
+        <p class="text-lg">
+          Transformamos momentos únicos en arte eterno. Cada fotografía es una
+          ventana al alma, cada composición una historia que merece ser contada.
+        </p>
+        <div class="flex flex-col gap-4">
+          <p class="flex gap-2.5 items-center">
+            <svg class="size-5 text-primary">
+              <use xlink:href="/assets/sprite.svg#mail-icon"></use>
+            </svg>
+            <a
+              href="mailto:luminari_inc@luminari.com"
+              class="hover:text-primary">luminari_inc@luminari.com</a
+            >
+          </p>
+          <p class="flex gap-2.5 items-center">
+            <svg class="size-5 text-primary">
+              <use xlink:href="/assets/sprite.svg#phone-icon"></use>
+            </svg>
+            <a href="tel:+5215533422311" class="hover:text-primary"
+              >+52 1 55 3342 2311</a
+            >
+          </p>
+          <p class="flex gap-2.5 items-center">
+            <svg class="size-5 text-primary">
+              <use xlink:href="/assets/sprite.svg#location-icon"></use>
+            </svg>
+            <a
+              href="https://maps.app.goo.gl/bmTAV7eVtHMH8SdT7"
+              class="hover:text-primary"
+              target="_blank"
+              >Calle del Arte 123, Centro Histórico, Ciudad de México</a
+            >
+          </p>
+        </div>
       </div>
-      <p class="prose prose-invert text-lg">
-        Transformamos momentos únicos en arte eterno. Cada fotografía es una
-        ventana al alma, cada composición una historia que merece ser contada.
-      </p>
-      <div class="flex flex-col gap-4">
-        <p class="flex gap-2.5 items-center">
-          <svg class="size-5 text-primary">
-            <use xlink:href="/assets/sprite.svg#mail-icon"></use>
-          </svg>
-          <a href="mailto:luminari_inc@luminari.com" class="hover:text-primary"
-            >luminari_inc@luminari.com</a
-          >
-        </p>
-        <p class="flex gap-2.5 items-center">
-          <svg class="size-5 text-primary">
-            <use xlink:href="/assets/sprite.svg#phone-icon"></use>
-          </svg>
-          <a href="tel:+5215533422311" class="hover:text-primary"
-            >+52 1 55 3342 2311</a
-          >
-        </p>
-        <p class="flex gap-2.5 items-center">
-          <svg class="size-5 text-primary">
-            <use xlink:href="/assets/sprite.svg#location-icon"></use>
-          </svg>
-          <a
-            href="https://maps.app.goo.gl/bmTAV7eVtHMH8SdT7"
-            class="hover:text-primary"
-            target="_blank"
-            >Calle del Arte 123, Centro Histórico, Ciudad de México</a
-          >
-        </p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1/3 lg:grid-cols-3"
+      >
+        <div class="flex flex-col gap-6">
+          <header>
+            <h4 class="font-semibold text-xl text-primary">Galeria</h4>
+          </header>
+          <ul class="flex flex-col gap-4 text-stone-300">
+            <li>
+              <a href="#about-us" class="hover:text-primary">Sobre Nosotros</a>
+            </li>
+            <li><a href="#gallery" class="hover:text-primary">Galería</a></li>
+            <li>
+              <a href="#collections" class="hover:text-primary">Colecciones</a>
+            </li>
+            <li>
+              <a href="#events" class="hover:text-primary">Exposiciones</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-6">
+          <header>
+            <h4 class="font-semibold text-xl text-primary">Servicios</h4>
+          </header>
+          <ul class="flex flex-col gap-4 text-stone-300">
+            <li>
+              <a href="#" class="hover:text-primary">Fotografía de Retrato</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-primary">Fotografía de Eventos</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-primary">Arte Personalizado</a>
+            </li>
+            <li><a href="#" class="hover:text-primary">Talleres</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-6">
+          <header>
+            <h4 class="font-semibold text-xl text-primary">Recursos</h4>
+          </header>
+          <ul class="flex flex-col gap-4 text-stone-300">
+            <li><a href="#" class="hover:text-primary">Blog</a></li>
+            <li><a href="#" class="hover:text-primary">Recursos</a></li>
+            <li>
+              <a href="#" class="hover:text-primary">Preguntas Frecuentes</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-primary">Términos y Condiciones</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="flex flex-col gap-6">
-      <header>
-        <h4 class="font-semibold text-xl text-primary">Galeria</h4>
-      </header>
-      <ul class="flex flex-col gap-4 text-stone-300">
-        <li>
-          <a href="#about-us" class="hover:text-primary">Sobre Nosotros</a>
-        </li>
-        <li><a href="#gallery" class="hover:text-primary">Galería</a></li>
-        <li>
-          <a href="#collections" class="hover:text-primary">Colecciones</a>
-        </li>
-        <li><a href="#events" class="hover:text-primary">Exposiciones</a></li>
-      </ul>
-    </div>
-    <div class="flex flex-col gap-6">
-      <header>
-        <h4 class="font-semibold text-xl text-primary">Servicios</h4>
-      </header>
-      <ul class="flex flex-col gap-4 text-stone-300">
-        <li>
-          <a href="#" class="hover:text-primary">Fotografía de Retrato</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-primary">Fotografía de Eventos</a>
-        </li>
-        <li><a href="#" class="hover:text-primary">Arte Personalizado</a></li>
-        <li><a href="#" class="hover:text-primary">Talleres</a></li>
-      </ul>
-    </div>
-    <div class="flex flex-col gap-6">
-      <header>
-        <h4 class="font-semibold text-xl text-primary">Recursos</h4>
-      </header>
-      <ul class="flex flex-col gap-4 text-stone-300">
-        <li><a href="#" class="hover:text-primary">Blog</a></li>
-        <li><a href="#" class="hover:text-primary">Recursos</a></li>
-        <li><a href="#" class="hover:text-primary">Preguntas Frecuentes</a></li>
-        <li>
-          <a href="#" class="hover:text-primary">Términos y Condiciones</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    class="flex flex-col gap-4 py-12 justify-center items-center text-stone-300"
-  >
-    <p>© 2025 Luminari. Todos los derechos reservados.</p>
-    <div class="flex gap-2">
-      <p>Hecho por</p>
-      <p class="hover:scale-120 hover:rotate-180 transition-all duration-3500">
-        Guidzero 🐈
-      </p>
+    <div
+      class="flex flex-col gap-4 py-12 justify-center items-center text-stone-300 md:flex-row md:justify-between"
+    >
+      <p>© 2025 Luminari. Todos los derechos reservados.</p>
+      <div class="flex gap-2">
+        <p>Hecho por</p>
+        <p
+          class="hover:scale-120 hover:rotate-180 transition-all duration-3500"
+        >
+          Guidzero 🐈
+        </p>
+      </div>
     </div>
   </div>
 </footer>
