@@ -1,0 +1,12 @@
+---
+const { href } = Astro.props;
+---
+
+<li class="relative flex flex-col group">
+  <a href={href} class="group-hover:text-primary transition-colors duration-300"
+    ><slot /></a
+  >
+  <span
+    class="absolute -bottom-5 translate-y-1.5 mt-0.5 p-2 w-full border-t-2 border-t-primary/0 group-hover:border-t-primary/100 group-hover:translate-y-0 transition-all duration-300"
+  ></span>
+</li>
