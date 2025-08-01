@@ -2,25 +2,86 @@
 import NavItem from "../components/NavItem.astro";
 ---
 
-<nav
-  class="fixed top-0 w-full flex justify-between p-6 items-center z-20 lg:px-12"
->
-  <a href="#" class="flex gap-2 items-center">
-    <svg class="size-8 text-primary">
-      <use xlink:href="/assets/sprite.svg#logo-icon"></use>
-    </svg>
-    <span class="font-bold text-xl">Luminari</span>
-  </a>
-  <div class="flex items-center md:hidden">
-    <svg class="size-8 cursor-pointer">
-      <use xlink:href="/assets/sprite.svg#burger-icon"></use>
-    </svg>
+<nav class="fixed flex justify-center items-center top-0 w-full z-20 mt-3">
+  <div
+    class="flex justify-between items-center w-full p-6 gap-8 lg:px-12"
+    id="nav-container"
+  >
+    <a href="#" class="flex gap-2 items-center">
+      <svg class="size-8 text-primary">
+        <use xlink:href="/assets/sprite.svg#logo-icon"></use>
+      </svg>
+      <span class="font-bold text-xl">Luminari</span>
+    </a>
+    <div class="flex items-center md:hidden" id="burger-button">
+      <svg class="size-8 cursor-pointer">
+        <use xlink:href="/assets/sprite.svg#burger-icon"></use>
+      </svg>
+    </div>
+    <div
+      class="fixed top-0 left-1/2 h-dvh w-1/2 bg-secondary/90 hidden justify-center items-center md:flex md:static md:bg-transparent md:w-auto md:h-auto"
+      id="nav-links"
+    >
+      <ul
+        class="flex flex-col gap-12 font-medium text-xl md:flex-row md:gap-8 md:text-base"
+      >
+        <NavItem href="#about-us"> Sobre Nosotros </NavItem>
+        <NavItem href="#gallery"> Galería </NavItem>
+        <NavItem href="#collections"> Colecciones </NavItem>
+        <NavItem href="#events"> Exposiciones </NavItem>
+        <NavItem href="#contact"> Contacto </NavItem>
+      </ul>
+    </div>
   </div>
-  <ul class="hidden gap-8 font-medium md:flex md:items-center">
-    <NavItem href="#about-us"> Sobre Nosotros </NavItem>
-    <NavItem href="#gallery"> Galeria </NavItem>
-    <NavItem href="#collections"> Colecciones </NavItem>
-    <NavItem href="#events"> Exposiciones </NavItem>
-    <NavItem href="#contact"> Contacto </NavItem>
-  </ul>
 </nav>
+
+<style>
+  @media (min-width: 768px) {
+    #nav-container {
+      animation: fit-width ease-in-out both;
+      animation-timeline: scroll(root);
+      animation-range: 20rem 30rem;
+    }
+
+    @keyframes fit-width {
+      to {
+        background: #313131dc;
+        width: 805px;
+        backdrop-filter: blur(5px);
+        border-radius: 2rem;
+      }
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (e) {
+    const burgerButton = document.getElementById("burger-button");
+    const navLinks = document.getElementById("nav-links");
+    if (burgerButton && navLinks) {
+      // Toggle del menú
+      burgerButton.addEventListener("click", function (e) {
+        e.stopPropagation();
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("flex");
+      });
+
+      // Cierra al hacer click en cualquier enlace del menú
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.classList.toggle("hidden");
+          navLinks.classList.toggle("flex");
+        });
+      });
+      document.addEventListener("click", function (e) {
+        if (
+          !navLinks.contains(e.target as Node) &&
+          !burgerButton.contains(e.target as Node)
+        ) {
+          navLinks.classList.add("hidden");
+          navLinks.classList.remove("flex");
+        }
+      });
+    }
+  });
+</script>
