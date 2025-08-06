@@ -105,12 +105,31 @@
       <p>© 2025 Luminari. Todos los derechos reservados.</p>
       <div class="flex gap-2">
         <p>Hecho por</p>
-        <p
-          class="hover:scale-120 hover:rotate-180 transition-all duration-3500"
-        >
-          Guidzero 🐈
-        </p>
+        <div class="flex gap-2" id="author-container">
+          <p id="author">Guidzero</p>
+          <span id="cat">🐈</span>
+        </div>
       </div>
     </div>
   </div>
 </footer>
+
+<script>
+  import { gsap } from "gsap";
+
+  const container = document.querySelector("#author-container");
+  const author = document.querySelector("#author");
+  const cat = document.querySelector("#cat");
+
+  container?.addEventListener("click", () => {
+    gsap.from(author, {
+      x: -100,
+    });
+
+    gsap.from(cat, {
+      x: 300,
+      duration: 1,
+      ease: "bounce.out",
+    });
+  });
+</script>

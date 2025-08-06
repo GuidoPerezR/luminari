@@ -6,7 +6,7 @@ const { description, initials, name, position } = Astro.props;
   class="grid grid-cols-1 gap-6 bg-tertiary outline-1 outline-white/20 rounded-xl p-10"
 >
   <header>
-    <p class="text-yellow-300 text-2xl">★ ★ ★ ★ ★</p>
+    <p class="text-yellow-300 text-2xl" id="stars">★ ★ ★ ★ ★</p>
   </header>
   <p class="italic prose prose-invert">{description}</p>
   <div class="flex items-center gap-4 pt-6 border-t-1 border-white/20">
@@ -20,3 +20,26 @@ const { description, initials, name, position } = Astro.props;
     </div>
   </div>
 </article>
+
+<script>
+  import { gsap } from "gsap";
+  import { SplitText } from "gsap/SplitText";
+
+  gsap.registerPlugin(SplitText);
+
+  const starsContent = document.querySelectorAll("#stars");
+
+  starsContent?.forEach((e) => {
+    const stars = new SplitText(e, {
+      type: "words",
+    });
+    gsap.from(stars.words, {
+      y: -5,
+      stagger: {
+        each: 0.8,
+        repeat: -1,
+        yoyo: true,
+      },
+    });
+  });
+</script>

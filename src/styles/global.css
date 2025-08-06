@@ -6,6 +6,11 @@
   --color-secondary: #1f1f1f;
   --color-tertiary: #2a2a2a;
 }
+a:active,
+button:active {
+  scale: 0.95;
+  transition: transform 2s ease;
+}
 
 /* Transicion Sweep to Top */
 .hvr-sweep-to-top::before {
@@ -36,4 +41,8 @@
 }
 .hvr-sweep-to-bottom:hover::before {
   transform: scaleY(1);
+}
+
+.pin-spacer {
+  margin: 0 !important;
 }

@@ -8,7 +8,7 @@ import NavItem from "../components/NavItem.astro";
     id="nav-container"
   >
     <a href="#" class="flex gap-2 items-center">
-      <svg class="size-8 text-primary">
+      <svg class="size-8 text-primary" id="logo-icon">
         <use xlink:href="/assets/sprite.svg#logo-icon"></use>
       </svg>
       <span class="font-bold text-xl">Luminari</span>
@@ -45,7 +45,7 @@ import NavItem from "../components/NavItem.astro";
 
     @keyframes fit-width {
       to {
-        background: #313131dc;
+        background: #313131a6;
         width: 805px;
         backdrop-filter: blur(5px);
         border-radius: 2rem;
@@ -55,6 +55,8 @@ import NavItem from "../components/NavItem.astro";
 </style>
 
 <script>
+  import { gsap } from "gsap";
+
   document.addEventListener("DOMContentLoaded", function (e) {
     const burgerButton = document.getElementById("burger-button");
     const navLinks = document.getElementById("nav-links");
@@ -84,4 +86,27 @@ import NavItem from "../components/NavItem.astro";
       });
     }
   });
+
+  const logo = document.querySelector("#logo-icon");
+  const tl = gsap.timeline({ defaults: { repeat: -1, repeatDelay: 30 } });
+  gsap.from(logo, {
+    opacity: 0,
+    duration: 3,
+  });
+  tl.to(
+    logo,
+    {
+      rotate: 15,
+      duration: 0.3,
+    },
+    "+=2"
+  )
+    .to(logo, {
+      rotate: -15,
+      duration: 0.3,
+    })
+    .to(logo, {
+      rotate: 0,
+      duration: 0.3,
+    });
 </script>

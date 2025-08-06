@@ -1,124 +1,182 @@
 <section
-  class="min-h-dvh flex flex-col gap-8 py-24 justify-center items-center px-6 w-full"
+  class="min-h-dvh flex py-24 justify-center items-center px-6 w-full"
   id="gallery"
 >
-  <header>
-    <h2 class="text-4xl font-bold md:text-5xl">
-      Galería <span class="text-primary">Principal</span>
-    </h2>
-  </header>
-  <p class="prose text-white text-center text-xl">
-    Explora nuestra colección cuidadosamente curada de obras que representan
-    diferentes estilos y técnicas artísticas
-  </p>
-  <div class="flex flex-col gap-12 mt-12 w-full">
-    <div
-      class="relative group overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 rounded-xl w-fit"
-    >
-      <img
-        src="./assets/paint-img1.webp"
-        alt="Imagen sobre la primera obra de la galería"
-        class="size-80 object-cover group-hover:scale-110 group-hover:opacity-80 transition-all duration-300 md:w-[480px] md:h-[480px]"
-      />
-      <div
-        class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      >
-        <h3 class="font-bold text-xl md:text-2xl">Navegantes del Horizonte</h3>
-        <p class="text-sm text-balance md:text-md">
-          Una imponente embarcación se abre paso entre la bruma, evocando el
-          misterio de las rutas antiguas.
-        </p>
+  <div class="max-w-6xl gap-10 flex flex-col w-full">
+    <header>
+      <h2 class="text-4xl font-bold text-center md:text-5xl">
+        Galería <span class="text-primary">Principal</span>
+      </h2>
+    </header>
+    <p class="prose text-white text-center text-xl mx-auto">
+      Explora nuestra colección cuidadosamente curada de obras que representan
+      diferentes estilos y técnicas artísticas
+    </p>
+    <div class="flex flex-col gap-24 mt-12 w-full">
+      <div>
+        <div
+          class="relative group overflow-hidden size-60 flex justify-center items-center md:size-96 lg:size-120"
+          id="paint-container"
+        >
+          <img
+            src="./assets/paint-img1.webp"
+            alt="Imagen sobre la primera obra de la galería"
+            class="w-full h-[150%] object-cover group-hover:opacity-80"
+          />
+          <div
+            class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="font-bold text-xl md:text-2xl">
+              Navegantes del Horizonte
+            </h3>
+            <p class="text-sm text-balance md:text-md">
+              Una imponente embarcación se abre paso entre la bruma, evocando el
+              misterio de las rutas antiguas.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div
-      class="relative group overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 rounded-xl w-fit"
-    >
-      <img
-        src="./assets/paint-img2.webp"
-        alt="Imagen sobre la segunda obra de la galería"
-        class="size-80 object-cover group-hover:scale-110 group-hover:opacity-80 transition-all duration-300 md:w-[480px] md:h-[480px]"
-      />
-      <div
-        class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      >
-        <h3 class="font-bold text-xl md:text-2xl">Flores al Óleo</h3>
-        <p class="text-sm text-balance md:text-md">
-          Pinceladas sueltas y colores cálidos dan vida a esta composición
-          floral impregnada de textura y emoción.
-        </p>
+      <div class="flex justify-end">
+        <div
+          class="relative group overflow-hidden size-60 flex justify-center items-center md:size-96 lg:size-120"
+          id="paint-container"
+        >
+          <img
+            src="./assets/paint-img2.webp"
+            alt="Imagen sobre la segunda obra de la galería"
+            class="w-full h-[150%] object-cover group-hover:opacity-80"
+          />
+          <div
+            class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="font-bold text-xl md:text-2xl">Flores al Óleo</h3>
+            <p class="text-sm text-balance md:text-md">
+              Pinceladas sueltas y colores cálidos dan vida a esta composición
+              floral impregnada de textura y emoción.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div
-      class="relative group overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 rounded-xl w-fit"
-    >
-      <img
-        src="./assets/paint-img3.webp"
-        alt="Imagen sobre la tercera obra de la galería"
-        class="size-80 object-cover group-hover:scale-110 group-hover:opacity-80 transition-all duration-300 md:w-[480px] md:h-[480px]"
-      />
-      <div
-        class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      >
-        <h3 class="font-bold text-xl md:text-2xl">Cipreses Bajo el Viento</h3>
-        <p class="text-sm text-balance md:text-md">
-          Inspirado en el movimiento postimpresionista, el paisaje se retuerce
-          con energía viva y vibrante.
-        </p>
+      <div class="flex justify-center">
+        <div
+          class="relative group overflow-hidden size-60 flex justify-center items-center md:size-96 lg:size-120"
+          id="paint-container"
+        >
+          <img
+            src="./assets/paint-img3.webp"
+            alt="Imagen sobre la tercera obra de la galería"
+            class="w-full h-[150%] object-cover group-hover:opacity-80"
+          />
+          <div
+            class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="font-bold text-xl md:text-2xl">
+              Cipreses Bajo el Viento
+            </h3>
+            <p class="text-sm text-balance md:text-md">
+              Inspirado en el movimiento postimpresionista, el paisaje se
+              retuerce con energía viva y vibrante.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div
-      class="relative group overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 rounded-xl w-fit"
-    >
-      <img
-        src="./assets/paint-img4.webp"
-        alt="Imagen sobre la cuarta obra de la galería"
-        class="size-80 object-cover group-hover:scale-110 group-hover:opacity-80 transition-all duration-300 md:w-[480px] md:h-[480px]"
-      />
-      <div
-        class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      >
-        <h3 class="font-bold text-xl md:text-2xl">Naturaleza Estática</h3>
-        <p class="text-sm text-balance md:text-md">
-          Un ramo clásico capturado en su máximo esplendor, una celebración de
-          la luz y el equilibrio.
-        </p>
+      <div>
+        <div
+          class="relative group overflow-hidden size-60 flex justify-center items-center md:size-96 lg:size-120"
+          id="paint-container"
+        >
+          <img
+            src="./assets/paint-img4.webp"
+            alt="Imagen sobre la cuarta obra de la galería"
+            class="w-full h-[150%] object-cover group-hover:opacity-80"
+          />
+          <div
+            class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="font-bold text-xl md:text-2xl">Naturaleza Estática</h3>
+            <p class="text-sm text-balance md:text-md">
+              Un ramo clásico capturado en su máximo esplendor, una celebración
+              de la luz y el equilibrio.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div
-      class="relative group overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 rounded-xl w-fit"
-    >
-      <img
-        src="./assets/paint-img5.webp"
-        alt="Imagen sobre la quinta obra de la galería"
-        class="size-80 object-cover group-hover:scale-110 group-hover:opacity-80 transition-all duration-300 md:w-[480px] md:h-[480px]"
-      />
-      <div
-        class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      >
-        <h3 class="font-bold text-xl md:text-2xl">Melocotones en Penumbra</h3>
-        <p class="text-sm text-balance md:text-md">
-          Una escena simple, donde la oscuridad realza la calidez y textura de
-          la fruta madura.
-        </p>
+      <div class="flex justify-end">
+        <div
+          class="relative group overflow-hidden size-60 flex justify-center items-center md:size-96 lg:size-120"
+          id="paint-container"
+        >
+          <img
+            src="./assets/paint-img5.webp"
+            alt="Imagen sobre la quinta obra de la galería"
+            class="w-full h-[150%] object-cover group-hover:opacity-80"
+          />
+          <div
+            class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="font-bold text-xl md:text-2xl">
+              Melocotones en Penumbra
+            </h3>
+            <p class="text-sm text-balance md:text-md">
+              Una escena simple, donde la oscuridad realza la calidez y textura
+              de la fruta madura.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div
-      class="relative group overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 rounded-xl w-fit"
-    >
-      <img
-        src="./assets/paint-img6.webp"
-        alt="Imagen sobre la sexta obra de la galería"
-        class="size-80 object-cover group-hover:scale-110 group-hover:opacity-80 transition-all duration-300 md:w-[480px] md:h-[480px]"
-      />
-      <div
-        class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      >
-        <h3 class="font-bold text-xl md:text-2xl">Voces Abstractas</h3>
-        <p class="text-sm text-balance md:text-md">
-          Trazos coloridos y líneas fragmentadas forman siluetas que invitan a
-          múltiples interpretaciones.
-        </p>
+      <div class="flex justify-center">
+        <div
+          class="relative group overflow-hidden size-60 flex justify-center items-center md:size-96 lg:size-120"
+          id="paint-container"
+        >
+          <img
+            src="./assets/paint-img6.webp"
+            alt="Imagen sobre la sexta obra de la galería"
+            class="w-full h-[150%] object-cover group-hover:opacity-80"
+          />
+          <div
+            class="absolute bottom-0 left-0 p-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="font-bold text-xl md:text-2xl">Voces Abstractas</h3>
+            <p class="text-sm text-balance md:text-md">
+              Trazos coloridos y líneas fragmentadas forman siluetas que invitan
+              a múltiples interpretaciones.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const paintContainers = document.querySelectorAll("#paint-container");
+
+  paintContainers.forEach((container) => {
+    const img = container.querySelector("img");
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: container,
+          start: "top 100%",
+          end: "bottom 0%",
+          scrub: 0.1,
+        },
+      })
+      .fromTo(
+        img,
+        {
+          yPercent: 30,
+        },
+        {
+          yPercent: -30,
+          ease: "linear",
+        }
+      );
+  });
+</script>
