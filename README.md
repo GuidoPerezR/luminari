@@ -1,46 +1,27 @@
-# Astro Starter Kit: Basics
+# 💡 Galería de Arte Luminari
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Landing page inspirada en una galería de arte moderna, diseñada para ofrecer una experiencia visual innovadora, elegante y llamativa.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📸 Captura de Pantalla
 
-## 🚀 Project Structure
+![](./public/assets/readme-img.png)
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🌐 Enlace al sitio
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+- [https://luminari-gallery.vercel.app/](https://luminari-gallery.vercel.app/)
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Tecnologías utilizadas
 
-## 🧞 Commands
+- Astro
+- TailwindCSS
+- GSAP
+- JavaScript
 
-All commands are run from the root of the project, from a terminal:
+## 👨‍💻 Autor
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+- GitHub - [GuidoPerezR](https://github.com/GuidoPerezR)
+- X - [@GU1DZ3RO](https://x.com/GU1DZ3RO)
 
-## 👀 Want to learn more?
+## 💭 Notas
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este proyecto me ayudo a fortalecer mis conocimientos en Astro, un framework que estoy aprendiendo y me gusto bastante para poder crear este tipo de páginas, TailwindCSS y GSAP, creando animaciones como las imagenes con efecto parallax o creando un scroll vertical para mostrar las colecciones con las que cuenta la galería.
